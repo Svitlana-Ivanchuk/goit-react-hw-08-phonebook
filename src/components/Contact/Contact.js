@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { TiUserDelete } from 'react-icons/ti';
-import { deleteContact } from 'redux/operations';
+import { deleteContact } from 'redux/contacts/operations';
 import {
   StyledBtnDelete,
   StyledCheck,

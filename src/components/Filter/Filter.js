@@ -6,7 +6,11 @@ import {
   StyledCounts,
 } from './Filter.styled';
 import { filterByName } from 'redux/filterSlice';
-import { selectCount, selectCountOnLine, selectFilter } from 'redux/selectors';
+import {
+  selectCount,
+  selectCountOnLine,
+  selectFilter,
+} from 'redux/contacts/selectors';
 
 export const Filter = () => {
   const filter = useSelector(selectFilter);

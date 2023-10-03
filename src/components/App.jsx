@@ -1,21 +1,22 @@
-import { GlobalStyle } from './GlobalStyle';
-import { ContactForm } from './ContactForm/ContactForm';
-import { ContactsList } from './ContactsList/ContactsList';
-import { Layout } from './Layuot';
-import { Section } from './Section/Section';
-import { Filter } from './Filter/Filter';
+import ContactsPage from 'pages/ContactsPage';
+import HomePage from 'pages/HomePage';
+import LoginPage from 'pages/LoginPage';
+import RegisterPage from 'pages/RegisterPage';
+import { Route, Routes } from 'react-router-dom';
+import { SharedLayout } from './SharedLayout/SharedLayout';
 
 export const App = () => {
   return (
-    <Layout>
-      <ContactForm></ContactForm>
-
-      <Section title="Contacts">
-        <Filter></Filter>
-        <ContactsList></ContactsList>
-      </Section>
-
-      <GlobalStyle />
-    </Layout>
+    <div>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="*" element={<h1>No such page exists</h1>} />
+        </Route>
+      </Routes>
+    </div>
   );
 };
