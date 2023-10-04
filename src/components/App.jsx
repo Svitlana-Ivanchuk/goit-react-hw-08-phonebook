@@ -5,9 +5,11 @@ import RegisterPage from 'pages/RegisterPage';
 import { Route, Routes } from 'react-router-dom';
 import { SharedLayout } from './SharedLayout/SharedLayout';
 
+import { ChakraProvider } from '@chakra-ui/react';
+
 export const App = () => {
   return (
-    <div>
+    <ChakraProvider>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
@@ -17,6 +19,6 @@ export const App = () => {
           <Route path="*" element={<h1>No such page exists</h1>} />
         </Route>
       </Routes>
-    </div>
+    </ChakraProvider>
   );
 };
