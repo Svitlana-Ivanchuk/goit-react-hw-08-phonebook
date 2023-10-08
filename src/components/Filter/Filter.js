@@ -5,12 +5,8 @@ import {
   StyledTitle,
   StyledCounts,
 } from './Filter.styled';
-import { filterByName } from 'redux/filterSlice';
-import {
-  selectCount,
-  selectCountOnLine,
-  selectFilter,
-} from 'redux/contacts/selectors';
+import { filterByName } from 'redux/contacts/filterSlice';
+import { selectCount, selectFilter } from 'redux/contacts/selectors';
 
 export const Filter = () => {
   const filter = useSelector(selectFilter);
@@ -21,7 +17,7 @@ export const Filter = () => {
     dispatch(filterByName(value));
   };
   const count = useSelector(selectCount);
-  const countOnLine = useSelector(selectCountOnLine);
+
   return (
     <StyledFilter>
       <StyledTitle>Find contacts by name</StyledTitle>
@@ -29,7 +25,6 @@ export const Filter = () => {
       <StyledInput type="text" value={filter} onChange={handleFilterName} />
       <StyledCounts>
         <StyledTitle>Total contacts: {count} </StyledTitle>
-        <StyledTitle>Total onLine: {countOnLine} </StyledTitle>
       </StyledCounts>
     </StyledFilter>
   );

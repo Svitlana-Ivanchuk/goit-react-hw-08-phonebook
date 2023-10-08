@@ -1,10 +1,12 @@
 import { RegisterForm } from 'components/RegisterForm/RegisterForm';
+import { Section } from 'components/Section/Section';
 
 export default function RegisterPage() {
   return (
     <>
-      <h2>Registration</h2>
-      <RegisterForm />
+      <Section title="Registration">
+        <RegisterForm />
+      </Section>
     </>
   );
 }

@@ -7,7 +7,7 @@ export const Layout = styled.div`
   padding: 0 31px;
   margin: 0 auto;
   margin-top: 24px;
-  max-width: 600px;
+  max-width: 800px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: #f4f4fd;

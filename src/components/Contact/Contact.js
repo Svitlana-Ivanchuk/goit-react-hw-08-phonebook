@@ -1,12 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { TiUserDelete } from 'react-icons/ti';
 import { deleteContact } from 'redux/contacts/operations';
-import {
-  StyledBtnDelete,
-  StyledCheck,
-  StyledContact,
-  StyledImages,
-} from './Contact.styled';
+import { StyledBtnDelete, StyledContact } from './Contact.styled';
 
 export const Contact = ({ contact }) => {
   const dispatch = useDispatch();
@@ -14,14 +9,6 @@ export const Contact = ({ contact }) => {
 
   return (
     <>
-      <StyledImages src={contact.createdAt} alt={contact.name} width="45" />
-      <StyledCheck
-        type="checkbox"
-        name="onLine"
-        //defaultChecked={contact.onLine}
-        checked={contact.onLine}
-        readOnly={true}
-      />
       <StyledContact>
         {contact.name} : {contact.number}
       </StyledContact>

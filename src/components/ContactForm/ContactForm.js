@@ -15,7 +15,6 @@ const schema = Yup.object().shape({
   name: Yup.string().min(3, 'Too Short!').required('A Name is required'),
   number: Yup.number()
     .min(8, 'Too Short!')
-    .typeError("That doesn't look like a phone number")
     .positive("A phone number can't start with a minus")
     .required('A phone number is required'),
 });
@@ -24,6 +23,7 @@ export const ContactForm = () => {
   const dispatch = useDispatch();
 
   const handleAddContact = newContact => {
+    console.log(newContact);
     dispatch(addContact(newContact));
   };
 
