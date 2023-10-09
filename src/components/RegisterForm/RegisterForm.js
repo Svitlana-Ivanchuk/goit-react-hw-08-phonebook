@@ -11,8 +11,6 @@ export const RegisterForm = () => {
   const handleSubmit = evt => {
     evt.preventDefault();
     const form = evt.currentTarget;
-    console.log(form.elements.name.value);
-
     dispatch(
       register({
         name: form.elements.name.value,
