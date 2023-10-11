@@ -6,6 +6,7 @@ import { Box, Flex, Container } from '@chakra-ui/react';
 
 export const Header = () => {
   const { isLoggedIn } = useAuth();
+
   return (
     <Box as="header" p={2}>
       <Container maxW="container.lg" p={4} borderBottom={0.25} boxShadow="md">

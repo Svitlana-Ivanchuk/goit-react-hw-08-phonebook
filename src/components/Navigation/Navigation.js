@@ -3,6 +3,7 @@ import { Container, StyledLink } from './Navigation.styled';
 
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();
+
   return (
     <Container>
       <StyledLink to="/">Home</StyledLink>
