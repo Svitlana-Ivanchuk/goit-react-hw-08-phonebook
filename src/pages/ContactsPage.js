@@ -1,5 +1,5 @@
 import { Flex } from '@chakra-ui/react';
-import { ContactForm } from 'components/ContactForm/ContactForm';
+import { ContactForm } from 'components/Forms/ContactForm';
 import { ContactsList } from 'components/ContactsList/ContactsList';
 import { Filter } from 'components/Filter/Filter';
 import { Section } from 'components/Section/Section';

@@ -6,7 +6,7 @@ import {
   StyledLabel,
   StyledField,
   StyledButton,
-} from './ContactForm.styled';
+} from './Form.styled';
 import { Section } from 'components/Section/Section';
 import { useDispatch } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';

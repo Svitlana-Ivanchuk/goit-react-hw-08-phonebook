@@ -1,4 +1,4 @@
-import { RegisterForm } from 'components/RegisterForm/RegisterForm';
+import { RegisterForm } from 'components/Forms/RegisterForm';
 import { Section } from 'components/Section/Section';
 
 export default function RegisterPage() {

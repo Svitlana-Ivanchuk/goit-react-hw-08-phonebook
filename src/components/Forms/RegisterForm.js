@@ -1,10 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
 import { Box, Input, Flex, VStack } from '@chakra-ui/react';
-import {
-  StyledButton,
-  StyledLabel,
-} from 'components/ContactForm/ContactForm.styled';
+import { StyledButton, StyledLabel } from 'components/Forms/Form.styled';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
