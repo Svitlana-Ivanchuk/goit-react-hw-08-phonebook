@@ -21,6 +21,7 @@ export const StyledLabel = styled.label`
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-transform: capitalize;
+  width: 100%;
 `;
 
 export const StyledField = styled(Field)`
