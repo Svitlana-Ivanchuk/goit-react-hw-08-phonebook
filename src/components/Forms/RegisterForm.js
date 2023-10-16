@@ -79,7 +79,6 @@ export const RegisterForm = () => {
                 </FormLabel>
                 <InputGroup>
                   <Input
-                    type="password"
                     name="password"
                     variant="outline"
                     required

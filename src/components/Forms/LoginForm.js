@@ -69,7 +69,6 @@ export const LoginForm = () => {
                   </FormLabel>
                   <InputGroup>
                     <Input
-                      type="password"
                       name="password"
                       variant="outline"
                       required
